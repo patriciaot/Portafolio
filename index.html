@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<h lang="en">
   <head>
     <!--Metadatos-->
     <meta charset="utf-8">
@@ -24,7 +24,313 @@
 
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <!--Barra de navegación-->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="./src/imagenes/icono1.png" width="50" alt="Logo de la página web">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonios">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+     <!-- Seccion Hero -->
+     <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle" src="./src/imagenes/Patyformal.jpeg" alt="Foto de Patricia Ortiz Tellez"> 
+      <h1>Hola, Soy Patricia Ortiz</h1>
+
+      <!--Animación con JavaScript-->
+      <h2 class="text-primary mb-4" id="typewriter"></h2>
+    </div>
+    <div class="hero-inferior">
+      <img class="hero-inferior-imagen img-fluid" src="./src/imagenes/hero-inferior.svg" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+    </div>
+  </section>
+
+     <!-- Sobre mi -->
+     <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conoce a Patricia Ortiz</h2>
+        <p class="seccion-texto"> Soy Desarrolladora Java Full-Stack Jr y Cirujana Dentista. Me apasiona el desarrollo web. Mi experiencia tanto en el área de salud como en el sector de TI me permite tener una amplia perspectiva para solucionar los problemas de forma eficiente y humana, para contribuir en el éxito del proyecto.
+        </p>
+      </div>
+    </section>
+ <!-- Experiencia -->
+ <section class="experiencia seccion-clara">
+  <div class="container text-center">
+    <div class="row">
+      <!-- Desarrollo Web -->
+      <div class="columna col-12 col-md-4">
+        <i class="bi bi-laptop"></i>
+        <p class="experiencia-titulo">Desarrollo Web</p>
+        <p>Construyo sitios web responsivos y modernos utilizando tecnologías como lo son HTML, CSS, JavaScript y Bootstrap.</p>
+        <div class="badges-contenedor">
+          <span class="badge text-bg-primary">HTML y CSS</span>
+          <span class="badge text-bg-primary">JavaScript</span>
+          <span class="badge text-bg-primary">Bootsrap</span>
+        </div>
+      </div>
+      <!-- Articulos -->
+      <div class="columna col-12 col-md-4">
+        <i class="bi bi-laptop"></i>
+        <p class="experiencia-titulo">Blogs</p>
+        <p>Pertenezco a una comunidad de mujeres programadoras llamada "Morras Programadoras", en donde compartimos tips, blogs, cursos, etc, sobre programación. </p>
+        <div class="badges-contenedor">
+          <span class="badge text-bg-primary">Escribir</span>
+          <span class="badge text-bg-primary">
+            Comunidad
+          </span>
+          <span class="badge text-bg-primary">Blogs</span>
+        </div>
+      </div>
+      <!-- Estudiante -->
+      <div class="columna col-12 col-md-4">
+        <i class="bi bi-laptop"></i>
+        <p class="experiencia-titulo">Academia</p>
+        <p>Soy estudiante para ser desarrolladora Java FullStack Jr en Generation y además soy Lic. en Cirujana Dentista por parte de la Facultad de Odontología, UNAM. </p>
+        <div class="badges-contenedor">
+          <span class="badge text-bg-primary">Generation</span>
+          <span class="badge text-bg-primary">UNAM</span>
+          <span class="badge text-bg-primary">TIC</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+      <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente...</h3>
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="./src/imagenes/google.jpg" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 1</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/PatriciaOT/clonacion-google.git" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="./src/imagenes/proyecto2.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 2</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="./src/imagenes/proyecto3.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 3</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="./src/imagenes/proyecto4.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 4</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="./src/imagenes/proyecto5.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 5</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 6 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="./src/imagenes/proyecto6.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 6</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/patriciaot" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más proyectos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Testimonios</h2>
+      <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes...</h3>
+      
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="./src/imagenes/Nancy3.jpg" alt="Foto de Nancy N. Salazar">
+              <p class="testimonio-texto">Patricia demostró ser una buena estudiante mientras estudió en el bootcamp de Tecnolochicas Pro.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Nancy N. Salazar</p>
+                <p class="cargo">Instructora en Tecnolochicas Pro</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="./src/imagenes/DraDiana.jpg" alt="Foto de Dra. Diana Sosa">
+              <p class="testimonio-texto">Patricia ha demostrado habilidades tecnológicas para facilitar las actividades del consultorio dental y atraer a más clientes.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Diana S. Gama</p>
+                <p class="cargo">Cirujana Dentista en Dental D.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="./src/imagenes/DraJessica.jpg" alt="Foto de Dra. Jessica Hernandez">
+              <p class="testimonio-texto">Patricia es una excelente compañera de equipo, proactiva e interesada en facilitar tareas odontológicas a través de la tecnología.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Dra. Jessica G. Hernandez</p>
+                <p class="cargo">Cirujana Dentista y esp. en Periodoncia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¿Algún proyecto en mente?
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:ot.patricia1@gmail.com">
+                <button type="button">  
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+      <img class="footer-logo" src="./src/imagenes/icono-blanco.svg" alt="Logo del portafolio">
+      <p class="footer-texto text-center">Si lo puedo imaginar,<br>lo puedo programar.</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://github.com/patriciaot" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/patriciaotellez/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="mailto:ot.patricia1@gmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Patricia Ortiz (2023) &#169;</div>
+    </footer>
+
+    <!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

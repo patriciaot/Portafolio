@@ -1,0 +1,101 @@
+body {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195) 0%, rgba(121,32,153,1) 86%);
+    background-attachment: fixed;
+    margin:0;
+    font-family: 'Quicksand', 'sand-serif';
+}
+
+/*¨Formulario en general*/
+
+#form{
+width: 400px;
+margin: 60px auto 60px auto;
+background-color: whitesmoke;
+border-radius: 5px;
+padding: 30px;
+}
+
+h1{
+    text-align: center;
+    color: #792099;
+}
+
+/*Cajas del formulario*/
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom: 15px;
+
+}
+.input-group input {
+    border-radius: 5px;
+    font-size:15px;
+    margin-top: 5px;
+    padding:10px;
+    border: 1px solid rgb(34,193,195);
+}
+
+#mensaje{
+    border-radius: 5px;
+    border: 1px solid rgb(34,193,195);
+    font-size: 15px;
+    margin-top:5px;
+    padding:10px;
+    resize:none;
+    width:auto;
+    height:150px;
+}
+
+.input-group input:focus{
+    outline:0;
+}
+
+.input-group .error {
+    color:rgb(242, 18, 18);
+    font-size:15px;
+    margin-top:5px;
+}
+
+.input-group.sucess input {
+    border-color: #0cc477;
+}
+
+.input-group.error input {
+    border-color: rgb(206,67,67);
+}
+
+
+
+/*Botones*/
+#form button {
+    background-color: #792099;
+    color:white;
+    border: 1px solid #792099;
+    border-radius: 5px;
+    padding:10px;
+    margin: 20px 10px;
+    cursor: pointer;
+    font-size:18px;
+    width: 43%;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.button {
+    background-color: #792099;
+    color:white;
+    border: 1px solid #792099;
+    border-radius: 5px;
+    padding:10px;
+    margin: 20px 10px;
+    cursor: pointer;
+    font-size:18px;
+    width: 43%;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+

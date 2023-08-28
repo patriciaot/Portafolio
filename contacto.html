@@ -14,21 +14,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <!--SweetAlert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   </head>
   <body>
 
     <div class="container">
-        <form action="" id ="form" onsubmit="return validar()">
+        <form action="https://formsubmit.co/68611e31f581f49f39c1699ec75d849a" method="POST" id ="form" onsubmit="return validar()">
             <h1>¡Contáctame!</h1>
             <div class="input-group">
                 <label for="username">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre completo">
                 <div class="error"></div>
             </div><!--input-group-->
 
             <div class="input-group">
                 <label for="username">Email</label>
-                <input type="text" id="email" name="email" placeholder="Correo">
+                <input type="text" id="email" name="email" placeholder="Correo electrónico">
                 <div class="error"></div>
             </div><!--input-group-->
 

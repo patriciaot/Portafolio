@@ -22,7 +22,13 @@
 
     <div class="container">
         <form action="https://formsubmit.co/68611e31f581f49f39c1699ec75d849a" method="POST" id ="form" onsubmit="return validar()">
-            <h1>¡Contáctame!</h1>
+          <!-- Honeypot -->  
+          <input type="text" name="_honey" style="display: none;">
+
+          <!-- Disable Captcha -->
+          <input type="hidden" name="_captcha" value ="false">
+
+          <h1>¡Contáctame!</h1>
             <div class="input-group">
                 <label for="username">Nombre</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre completo">
